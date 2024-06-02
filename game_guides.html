@@ -1,0 +1,349 @@
+<center>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+        <script defer src="script.js"></script>
+        <title>TIbia</title>
+        <style>
+            body{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            background-image: url('imagens/tibia_arte.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat:repeat;
+            background-attachment: fixed;
+            margin: 0 ;
+            padding: 0;
+            }
+
+            header{
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            background-color: rgb(4, 16, 32);
+            border-bottom: 1px white solid;
+            padding-inline: 10px;
+            }
+
+            main{
+                flex: 1;
+                padding-top: 46px;
+            }
+
+            a{
+            text-decoration: none;
+            color: rgb(223, 175, 20);
+            font-weight:bolder;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            }
+
+            .nav{
+            max-width: 650px;
+            height: 50px;
+            margin-inline:  auto;
+            display: flex;
+            justify-content: space-between;
+            align-items:  center;
+            }
+
+            button{
+                display: none;
+            }
+
+            .nav-list{
+                display: flex;
+                gap: 32px;
+                list-style: none;
+                cursor: pointer;
+            }
+
+            .dropdown_menu{
+                display: none;
+            }
+
+            .dropdown_menu.open{
+                height: 240px;
+            }
+
+
+            nav-list a {
+                font-size: 5px;
+                color: goldenrod;
+                padding-block: 16px;
+            }
+
+            li:hover, td:hover {
+                opacity: 70%;
+            }
+
+            .jacquard-24-regular {
+            font-family: "Jacquard 24", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px;
+            margin: 0px;
+            position: relative;
+            padding: 0px;
+            top: 0px;
+            display: flex;
+            }
+
+            .artigos{
+            margin-top: 15px;
+            width: 50%;
+            height:auto;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: rgb(219, 206, 134);
+            border-radius: 10px;
+            padding: 15px;
+            }
+
+            .tit-art{
+            width: 100%;
+            background-color: rgb(1, 87, 1);
+            border-radius: 5px;
+            }
+
+            .features{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 95%;
+                height: 25px;
+                border-radius: 10px;
+                background-color: rgb(158, 11, 11);
+                color: black;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .final-imgs{
+                    width: 40%;
+                    padding-block: 15px;
+                    padding-inline: 10px;
+                }
+
+            footer {
+                font-size: 13px;
+                position: fixed;
+                left: 0;
+                bottom: 5;
+                width: 100%;
+                color: #fff;
+                text-align: center;
+}
+
+            @media screen and ( max-width:1020px){
+                header{
+                    height: 80;
+                    
+                }
+
+                a{
+                    font-size: 30px;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color: goldenrod;
+                }
+
+
+                .nav{
+            max-width: 650px;
+            height: 80pxpx;
+            margin-block: 0px;
+            margin-inline: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items:  center;
+            gap: 30px;
+            }
+            
+            button{
+                display: block;
+                margin-top: 27px;
+                width: 45px;
+                height: 45px;
+                border: 2px solid goldenrod;
+                border-radius: 5px;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+            .linha{
+                display: block;
+                width: 30px;
+                height: 3px;
+                background-color: goldenrod;
+                margin: 7px auto;
+                position: relative;
+                transform-origin: center;
+            }
+
+            button.ativar{
+                border: 2px solid red;
+            }
+            button.ativar .linha:nth-child(1){
+                transform: translateY(10px) rotate(-35deg);
+                background-color: red;
+            }
+            button.ativar .linha:nth-child(2){
+                background-color: transparent;
+            }
+            button.ativar .linha:nth-child(3){
+                transform: translateY(-10px) rotate(35deg);
+                background-color: red;
+            }
+            
+
+            .hamburguer{
+                margin-top: 30px;
+                display: block;
+            }
+            /*DROPDOWN MENU */
+            .dropdown_menu{
+                display: none;
+                padding-left: 0px;
+                position: absolute;
+                right: 2rem;
+                top: 66px;
+                list-style: none;
+                background-color: rgb(4, 16, 32);
+                border-radius: 10px;
+                overflow: hidden;
+                width: 270px;
+            }
+            .dropdown_menu li{
+                padding-block: 10px;
+                margin: 0px;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .dropdown_menu li:hover{
+                background-color: rgb(5, 23, 45); 
+            }
+
+            .nav-list{
+                    display: none;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 0;
+                    pointer-events: none;
+                }
+
+                .nav-list a{
+                    font-size:18px;
+                    color: white;
+                    padding-block: 16px;
+                }
+
+                li:hover{
+                opacity: 70%;
+                }
+
+                main{
+                    padding-top: 75px;
+                    padding-bottom: 5px;
+                }
+                
+
+                .artigos{
+                    width: 92%;
+                    margin-top: 20px;
+                }
+
+                .final-imgs{
+                    width: 65%;
+                    padding-block: 10px;
+                }
+
+                .jacquard-24-regular {
+                    font-family: "Jacquard 24", system-ui;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 60px;
+                    margin-top: 25px;
+                    position: relative;
+                    top: 0px;
+                    color: goldenrod;
+                    display: flex;
+                    border: none;
+                }
+
+                footer {
+                font-size: 13px;
+                position: relative;
+                left: 0;
+                bottom: 5;
+                width: 100%;
+                color: #fff;
+                text-align: center;
+}
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="nav">
+                    <a href="news.html">
+                    <h2 class="jacquard-24-regular">Tibia</h2>
+                    </a>
+
+                    <button id="btn-menu" onclick="clickMenu()">
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                    </button>
+
+                    <ul class="nav-list">
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="about_tibia.html">About Tibia</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="game_guides.html">Game Guides</a></li>
+                    </ul>
+
+            </nav>
+
+            <ul class="dropdown_menu" id="itens">
+                <li><a href="news.html">News</a></li>
+                <li><a href="about_tibia.html">About Tibia</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="game_guides.html">Game Guides</a></li>
+            </ul>
+
+        </header>
+
+        <main>
+            <div class="artigos">
+                <article>
+                    <div>
+                        <h2 class="tit-art">Game Guides</h2>
+                    </div>
+                    <div class="features"><p>Convenience features</p></div>
+                    
+                    
+                        <img class="final-imgs" src="imagens/art_four_img.jpg">
+                        <img class="final-imgs" src="imagens/art_fifth_img.jpg">
+                        
+                </article>
+            </div>
+            
+        </main>
+
+
+        <footer>
+        <p>Copyrights by Cipsoft, all rights reserved | Made by Weslley Caetano</p>
+        <p>weslley.soares@fatec.sp.gov.br</p>
+        </footer>
+
+    </body>
+    </html>
+</center>
