@@ -9,6 +9,8 @@
         <title>TIbia</title>
         <style>
             body{
+            display: flex;
+            flex-direction: column;
             background-image: url('imagens/tibia_arte.jpg');
             background-size: cover;
             background-position: center;
@@ -16,12 +18,10 @@
             background-attachment: fixed;
             margin: 0 ;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column ;
             }
 
             header{
+            padding: 5px;
             position: fixed;
             width: 100%;
             height: 50px;
@@ -31,8 +31,7 @@
             }
 
             main{
-            padding-top: 46px;
-            flex: 1 1 0;
+            margin-top: 72px;
             }
 
             a{
@@ -100,7 +99,6 @@
             }
 
             .artigos{
-            margin-top: 15px;
             width: 50%;
             height: auto;
             padding: 15px;
@@ -158,11 +156,15 @@
                 }
 
                 a{
+                    padding: 15px;
                     font-size: 30px;
                     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                     color: goldenrod;
                 }
 
+                main{
+                    margin-top: 100px;
+                }
 
                 .nav{
             max-width: 650px;
@@ -258,11 +260,6 @@
 
                 li:hover{
                 opacity: 70%;
-                }
-
-                main{
-                    padding-top: 75px;
-                    padding-bottom: 5px;
                 }
                 
 
