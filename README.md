@@ -8,4 +8,4 @@ Aliás este é o primeiro blog que crio, assim pude praticar alguns conhecimento
 ![First page](https://github.com/wescaetano/tibiaSite/blob/main/imagens/news.png)
 
 
-Link para o deploy: https://wescaetano.github.io/tibiaSite/index.html
+Link para o deploy: https://wescaetano.github.io/tibia-site/index.html
