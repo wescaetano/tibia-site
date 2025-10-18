@@ -10,3 +10,4 @@ Aliás este é o primeiro blog que crio, assim pude praticar alguns conhecimento
 
 Deploy: [Link](https://wescaetano.github.io/tibia-site/index.html)
 
+
