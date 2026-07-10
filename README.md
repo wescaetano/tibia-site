@@ -1,8 +1,10 @@
 ﻿## Blog-tibia
 
-Criei este blog como tarefa para a matéria de programação em microinformática, o objetivo era criar uma página em html usando algumas tags aprendidas em aula, mas acabei tendo a tarefa como gatilho para criar um blog informativo sobre um jogo que joguei durante bastante tempo em minha adolescência, o mmo-rpg chamado Tibia.
+I created this blog as an assignment for my Microcomputer Programming course. The original goal was simply to build an HTML page using some of the tags we had learned in class. However, I ended up using the assignment as an opportunity to create an informative blog about a game that I spent a large part of my teenage years playing: the MMORPG Tibia.
 
-Aliás este é o primeiro blog que crio, assim pude praticar alguns conhecimentos obtidos em aula e fora dela também, fui buscando aprender coisas as quais não sabia ao iniciar o desenvolvimento da página, para que assim conseguisse a concluir, com os erros e acertos pude perceber que tenho muito a aprender no desenvolvimento Web, assim, pretendo aperfeiçoar meus conhecimentos técnicos para desenvolver sites que requisitem conhecimentos mais avançados.
+This is also the first blog I've ever created. Throughout the project, I was able to put into practice not only the concepts I learned in class but also many things I taught myself along the way. As I developed the website, I continuously learned new concepts and techniques that I didn't know when I first started.
+
+The experience of overcoming challenges, making mistakes, and finding solutions showed me that there is still a lot for me to learn about web development. Because of that, I intend to keep improving my technical skills so I can build websites that require more advanced knowledge and techniques.
 
 ## Site Screenshot
 ![First page](https://github.com/wescaetano/tibiaSite/blob/main/imagens/news.png)
